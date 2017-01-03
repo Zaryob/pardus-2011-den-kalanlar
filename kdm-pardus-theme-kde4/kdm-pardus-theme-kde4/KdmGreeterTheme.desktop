@@ -1,0 +1,11 @@
+[KdmGreeterTheme]
+Greeter=pars.xml
+Name=Pardus
+Name[tr]=Pardus
+Name[x-test]=xxPardusxx
+Description=Pardus Theme
+Description[tr]=Pardus Teması
+Description[x-test]=xxPardus Themexx
+Author=Gökmen GÖKSEL, Gökhan ÖZKAN
+Copyright=(c) 2008 TUBITAK/UEAKE, implented from Oxygen theme; by Nuno Fernades Pinheiro, Urs Wolfer & Oswald Buddenhagen
+Screenshot=screenshot.png

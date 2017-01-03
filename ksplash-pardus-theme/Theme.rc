@@ -1,0 +1,9 @@
+[KSplash Theme: Pardus]
+Name = Splash Screen for Pardus
+Description = Pardus Splash Screen based on Air
+Version = 2.2
+Author = Gökhan Özkan <gokhan@pardus.org.tr>, Onur Küçük <onur@pardus.org.tr>
+Homepage = http://www.kde.org
+
+# Theme behaviour settings.
+Engine = KSplashX

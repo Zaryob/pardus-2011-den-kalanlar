@@ -1,0 +1,143 @@
+<?xml version="1.0"?>
+<!DOCTYPE greeter SYSTEM "greeter.dtd">
+<greeter>
+
+    <!-- arkaplan -->
+    <item type="pixmap">
+        <normal file="background.jpg"/>
+        <pos x="0" y="0" width="100%" height="100%"/>
+    </item>
+
+    <!-- logo -->
+    <item type="rect">
+        <pos anchor="n" x="%50" y="%8" width="box" height="box"/>
+        <box orientation="vertical" spacing="2">
+            <item type="pixmap">
+                <normal file="logo2.png"/>
+            </item>
+        </box>
+    </item>
+
+    <item type="rect">
+        <pos anchor="n" x="%50" y="%85" width="box" height="box"/>
+        <box orientation="vertical" spacing="2">
+            <!-- makine adı -->
+            <item type="label">
+                <pos anchor="n" x="%50"/>
+                <normal color="#DDDDDD" font="Sans Bold 10"/>
+                <text>%h</text>
+            </item>
+            <!-- saat -->
+            <item type="label" id="clock">
+                <normal color="#DDDDDD" font="Sans Bold 10"/>
+                <text>%c</text>
+            </item>
+        </box>
+    </item>
+
+    <!-- kullanıcı ve parola alanları -->
+    <item type="rect">
+        <pos anchor="n" x="%50" y="%40" height="box" width="box"/>
+        <box orientation="horizontal" homogenous="true" spacing="40">
+            <item type="rect">
+                <pos width="box" height="box"/>
+                <box orientation="vertical" spacing="20">
+                    <item type="rect">
+                        <pos width="box" height="box"/>
+                        <box orientation="horizontal" spacing="20">
+                            <item type="rect">
+                                <pos width="box" height="box"/>
+                                <box orientation="vertical" homogenous="true" spacing="18">
+                                    <!-- kullanıcı adı sorusu -->
+                                    <item type="label">
+                                        <pos anchor="w" y="%60"/>
+                                        <normal color="#CCCCCC" font="Sans 13"/>
+                                        <stock type="username-label"/>
+                                    </item>
+                                    <!-- parola sorusu -->
+                                    <item type="label">
+                                        <pos anchor="w" y="%60"/>
+                                        <normal color="#CCCCCC" font="Sans 13"/>
+                                        <stock type="password-label"/>
+                                    </item>
+                                </box>
+                            </item>
+                            <item type="rect">
+                                <pos width="box" height="box"/>
+                                <box orientation="vertical" homogenous="true" spacing="10">
+                                    <!-- kullanıcı adı giriş yeri -->
+                                    <item type="entry" id="user-entry">
+                                        <normal font="Sans Bold 10"/>
+                                        <pos width="130" height="28"/>
+                                    </item>
+                                    <!-- parola giriş yeri -->
+                                    <item type="entry" id="pw-entry">
+                                        <normal font="Sans Bold 10"/>
+                                        <pos width="130" height="28"/>
+                                    </item>
+                                </box>
+                            </item>
+                        </box>
+                    </item>
+                    <item type="rect">
+                        <pos width="box" height="box"/>
+                        <box orientation="horizontal" homogenous="false" spacing="10">
+                            <item type="pixmap" id="login_button" button="true">
+                                <normal file="login.png" tint="#dddddd"/>
+                                <prelight file="login.png"/>
+                                <active file="login.png" tint="#e07070"/>
+                            </item>
+                            <item type="label">
+                                <pos anchor="w" y="%50"/>
+                                <normal color="#CCCCCC" font="Sans Bold 10"/>
+                                <stock type="login"/>
+                            </item>
+                        </box>
+                    </item>
+                    <item type="rect">
+                        <pos width="box" height="box"/>
+                        <box orientation="horizontal" homogenous="false" spacing="10">
+                            <item type="pixmap" id="shutdown_button" button="true">
+                                <normal file="exit.png" tint="#dddddd"/>
+                                <prelight file="exit.png"/>
+                                <active file="exit.png" tint="#e07070"/>
+                            </item>
+                            <item type="label">
+                                <pos anchor="w" y="%50"/>
+                                <normal color="#CCCCCC" font="Sans Bold 10"/>
+                                <stock type="quit"/>
+                            </item>
+                        </box>
+                    </item>
+                </box>
+            </item>
+            <!-- kullanıcı listesi -->
+            <item type="rect" id="userlist">
+                <pos anchor="w" y="%50" height="400" width="200"/>
+            </item>
+
+
+        </box>
+
+    </item>
+
+    <!-- hata mesajı -->
+    <item type="label" id="pam-error">
+        <normal color="#EEEEEE" font="Sans Bold 10"/>
+        <pos anchor="n" x="%50" y="%70"/>
+    </item>
+
+    <!-- capslock uyarısı -->
+    <item type="rect" id="caps-lock-warning">
+        <normal color="#252525" alpha="0.2"/>
+        <pos anchor="n" x="%50" y="77%" width="box" height="box"/>
+        <box orientation="vertical" xpadding="6" ypadding="6">
+            <item type="label">
+                <normal color="#CCCCCC" font="Sans Bold 10"/>
+                <pos anchor="nw" x="0" y="0"/>
+                <stock type="caps-lock-warning"/>
+            </item>
+        </box>
+    </item>
+
+</greeter>

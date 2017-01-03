@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=Pardus
+Description=Pardus boot theme.
+ModuleName=script
+
+[script]
+ImageDir=@PLYMOUTH_THEME_PATH@/pardus
+ScriptFile=@PLYMOUTH_THEME_PATH@/pardus/pardus.script
